@@ -1,0 +1,54 @@
+[1mdiff --git a/index.css b/index.css[m
+[1mindex e0630bc..f2c30a9 100644[m
+[1m--- a/index.css[m
+[1m+++ b/index.css[m
+[36m@@ -20,7 +20,6 @@[m [mbody{[m
+     background-position: center center;[m
+  	background-blend-mode:luminosity;[m
+  	display: flex;[m
+[31m- 	/*flex-direction: column;*/[m
+  	justify-content: center;[m
+  	align-items: center;[m
+     height:100vh;[m
+[36m@@ -28,8 +27,6 @@[m [mbody{[m
+ [m
+ .container{[m
+ 	width:80%;[m
+[31m-	/*height: 80%;*/[m
+[31m-	/*margin:3em auto;*/[m
+ 	display: flex;[m
+ 	justify-content: space-between;[m
+ [m
+[36m@@ -66,20 +63,17 @@[m [mbox-shadow: 0 3px 3px rgba(56,204,140,0.5);}[m
+ .login-form{[m
+ 	 display:flex;[m
+     flex-direction: column;[m
+[31m-    /*align-items: space-around;*/[m
+[31m-    /*justify-content: center;*/[m
+     background-color: white;[m
+ }[m
+ [m
+ span#blur{color:var(--Grayish-Blue);}[m
+ [m
+ .login-form > *{[m
+[31m-    /*width:80%;*/[m
+     margin: 2em 2em;[m
+ }[m
+ [m
+ input,button{[m
+[31m-	/*height:40px;*/[m
+[32m+[m
+ 	border-radius: 5px;[m
+ 	border:1px solid grey;[m
+ 	[m
+[36m@@ -157,8 +151,7 @@[m [mspan a{[m
+ [m
+ 	body{[m
+ 		height: 100%;[m
+[31m-		background-image: url("./images/bg-intro-mobile.png")[m
+[31m-[m
+[32m+[m		[32mbackground-image: url("./images/bg-intro-mobile.png");[m
+ 	}[m
+ [m
+ }[m
+\ No newline at end of file[m
