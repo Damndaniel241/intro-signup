@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+:root{
+	--Red: hsl(0, 100%, 74%);
+	--Green: hsl(154, 59%, 51%);
+	--Blue: hsl(248, 32%, 49%);
+	--Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+
+}
+
+
+body{
+	background-image: url("./images/bg-intro-desktop.png");
+    background-color:var(--Red);
+    background-repeat: repeat, no-repeat; 
+    background-position: center center;
+ 	background-blend-mode:luminosity;
+ 	display: flex;
+ 	/*flex-direction: column;*/
+ 	justify-content: center;
+ 	align-items: center;
+    height:100vh;
+}
+
+.container{
+	width:80%;
+	/*height: 80%;*/
+	/*margin:3em auto;*/
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.word{
+	color:white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size:2em;
+	width:50%;
+}
+
+
+.word p{font-size:0.5em;}
+
+.sign-up{
+	display: flex;
+	flex-direction: column;
+}
+
+.sign-up > *{border-radius: 8px;
+box-shadow: 0 10px 0 rgba(0,0,0,0.2);}
+
+#blue{
+	   background-color:var(--Blue);
+ margin-bottom: 1.5em;
+}
+
+#green{background-color:var(--Green);
+box-shadow: 0 3px 3px rgba(56,204,140,0.5);}
+
+.login-form{
+	 display:flex;
+    flex-direction: column;
+    /*align-items: space-around;*/
+    /*justify-content: center;*/
+    background-color: white;
+}
+
+span#blur{color:var(--Grayish-Blue);}
+
+.login-form > *{
+    /*width:80%;*/
+    margin: 2em 2em;
+}
+
+input,button{
+	/*height:40px;*/
+	border-radius: 5px;
+	border:1px solid grey;
+	
+}
+button{border: none;
+    padding: 15px;
+      color:white;
+      cursor: pointer;
+}
+
+input{
+	padding:15px;
+	border-color: var(--Grayish-Blue);
+}
+
+::placeholder{
+	color:var(--Dark-Blue);
+	font-weight: 600;
+
+}
+
+span{
+	margin-top:0 !important;
+	color:var(--Grayish-Blue);
+	text-align: center;
+	font-weight: 600;
+	font-size:100%;
+
+}
+span a{
+    color:var(--Red);
+    text-decoration: none;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px){
+	body{font-size:70%;min-height: 100%;}
+	.container{
+		width:100%;
+	}
+	
+} 
+
+
+@media screen and (max-width: 800px){
+
+	html{
+	}
+	.container{
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		margin-bottom: 6em;
+
+	}
+
+	.word{
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		
+
+	}
+
+	.word > *{
+	   text-align:center;
+	}
+
+	.word > h1{
+		font-size:1.3em;
+	}
+
+	.word > p{
+		font-size:50%;
+	}
+
+	body{
+		height: 100%;
+		background-image: url("./images/bg-intro-mobile.png")
+
+	}
+
+}
